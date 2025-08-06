@@ -14,7 +14,7 @@
 *
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Special+Gothic+Expanded+One&display=swap");
 
 :root {
   /* Primary Colors */
@@ -142,10 +142,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 0.5rem;
   color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 h1 {
@@ -454,9 +457,12 @@ input[type="reset"] {
   color: var(--background-primary);
   border: none;
   border-radius: var(--border-radius-small);
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   cursor: pointer;
   transition: all 0.2s ease;
   outline: none;
