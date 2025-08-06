@@ -1,5 +1,5 @@
 /**
-* Cyber.css - A modern lightweight CSS framework inspired by cyberpunk aesthetics.
+* Cyber.css - A modern lightweight CSS framework for use in your own frontends.
 * Version 0.1.0
 * https://github.com/atlis-ky/cybercss-v1
 *
@@ -17,36 +17,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Special+Gothic+Expanded+One&display=swap");
 
 :root {
-  /* Primary Colors */
-  --background-primary: #081b26;
+  /* PALETTE - MAIN */
+  --main-accent: #f2766b;
+  --main-secondary: #586166;
+  --main-tertiary: #ecc5c1;
+  --main-dark: #081b26;
+  --main-text-dark: #222;
+  --main-text-light: #f7f7f7;
+
+  /* PALETTE - ALTERNATES */
+  --alt-one: #ef6351;
+  --alt-two: #f2766b;
+  --alt-three: #f7a399;
+  --alt-four: #fbc3bc;
+  --alt-five: #ffe3e0;
+
+  /* Background Colors */
+  --background-primary: var(--main-dark);
   --background-secondary: #0a1f2e;
   --background-tertiary: #0e2635;
   --background-accent: #112c3d;
   --background-muted: #0c2330;
 
   /* Text Colors */
-  --color-primary: #f7f7f7;
-  --color-secondary: #586166;
-  --color-tertiary: #8a9499;
-  --color-accent: #f2766b;
-  --color-link: #f2766b;
+  --color-primary: var(--main-text-light);
+  --color-secondary: var(--main-secondary);
+  --color-tertiary: var(--main-tertiary);
+  --color-accent: var(--main-accent);
+  --color-link: var(--main-accent);
   --color-link-transparent: rgba(242, 118, 107, 0.1);
-
-  /* Status Colors */
-  --color-success: #4ade80;
-  --color-warning: #fbbf24;
-  --color-error: #ef4444;
-  --color-info: #3b82f6;
-  --color-highlight: #fef9c3;
-
-  /* Gradient Colors */
-  --gradient-start: #f2766b;
-  --gradient-end: #ef6351;
 
   /* Border Colors */
   --border-primary: #1e3a47;
   --border-secondary: #2d4855;
-  --border-highlight: #f2766b;
+  --border-highlight: var(--main-accent);
   --border-tertiary: #3a5463;
 
   /* Shadow Colors */
@@ -59,40 +63,13 @@
   --padding-large: 1.5rem;
 
   /* Border Radius */
-  --border-radius-small: 0.375rem;
-  --border-radius-large: 0.75rem;
-  --highlight-border-radius: 0.375rem;
+  --border-radius: 12px;
+  --border-radius-small: 6px;
+  --border-radius-large: var(--border-radius);
+  --highlight-border-radius: 6px;
 
   /* Selection */
   --text-selection: rgba(242, 118, 107, 0.3);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-primary: #ffffff;
-    --background-secondary: #f8fafc;
-    --background-tertiary: #f1f5f9;
-    --background-accent: #e2e8f0;
-    --background-muted: #f3f4f6;
-
-    --color-primary: #1e293b;
-    --color-secondary: #64748b;
-    --color-tertiary: #475569;
-    --color-accent: #dc2626;
-    --color-link: #dc2626;
-    --color-link-transparent: rgba(220, 38, 38, 0.1);
-
-    --border-primary: #e2e8f0;
-    --border-secondary: #cbd5e1;
-    --border-highlight: #dc2626;
-    --border-tertiary: #94a3b8;
-
-    --shadow-dark: rgba(0, 0, 0, 0.1);
-    --shadow-light: rgba(220, 38, 38, 0.1);
-    --shadow-text: rgba(0, 0, 0, 0.2);
-
-    --text-selection: rgba(220, 38, 38, 0.2);
-  }
 }
 
 * {
@@ -121,8 +98,8 @@ body {
 .text-gradient {
   background: linear-gradient(
     135deg,
-    var(--gradient-start) 0%,
-    var(--gradient-end) 100%
+    var(--main-accent) 0%,
+    var(--alt-one) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -452,13 +429,13 @@ input[type="reset"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   background-color: var(--color-accent);
-  color: var(--background-primary);
+  color: var(--color-primary);
   border: none;
   border-radius: var(--border-radius-small);
   font-family: "Special Gothic Expanded One", Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
@@ -466,7 +443,7 @@ input[type="reset"] {
   cursor: pointer;
   transition: all 0.2s ease;
   outline: none;
-  box-shadow: 0 2px 8px var(--shadow-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover,
@@ -474,50 +451,56 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px var(--shadow-light);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:active,
+button.active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
+  background-color: var(--color-accent);
+  color: var(--background-primary);
   transform: translateY(0);
-  box-shadow: 0 2px 8px var(--shadow-light);
-}
-
-button:disabled,
-input[type="submit"]:disabled,
-input[type="button"]:disabled,
-input[type="reset"]:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Variants */
 .btn-secondary {
-  background-color: var(--background-tertiary);
+  background-color: transparent;
   color: var(--color-primary);
   border: 2px solid var(--border-secondary);
-  box-shadow: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover {
-  background-color: var(--background-accent);
-  border-color: var(--border-highlight);
+  transform: translateY(-2px);
 }
 
-.btn-outline {
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: var(--color-accent);
+  color: var(--background-primary);
+  border-color: var(--color-accent);
+  transform: translateY(0);
+}
+
+.btn-tertiary {
   background-color: transparent;
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  box-shadow: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.btn-outline:hover {
+.btn-tertiary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-tertiary:active,
+.btn-tertiary.active {
   background-color: var(--color-accent);
   color: var(--background-primary);
+  transform: translateY(0);
 }
 
 /* Card Component */

@@ -33,15 +33,14 @@ const DemoList = () => {
           <div
             style={{
               display: "flex",
-              gap: "1rem",
+              gap: "0.8rem",
               flexWrap: "wrap",
               marginBottom: "1rem",
             }}
           >
-            <button>Primary Button</button>
-            <button className="btn-secondary">Secondary Button</button>
-            <button className="btn-outline">Outline Button</button>
-            <button disabled>Disabled Button</button>
+            <button>Primary</button>
+            <button className="btn-secondary">Secondary</button>
+            <button className="btn-tertiary">Tertiary</button>
           </div>
         </section>
 
@@ -122,7 +121,7 @@ const DemoList = () => {
                 <td>Developer</td>
                 <td>Active</td>
                 <td>
-                  <button className="btn-outline">Edit</button>
+                  <button className="btn-tertiary">Edit</button>
                 </td>
               </tr>
               <tr>
@@ -130,7 +129,7 @@ const DemoList = () => {
                 <td>Designer</td>
                 <td>Active</td>
                 <td>
-                  <button className="btn-outline">Edit</button>
+                  <button className="btn-tertiary">Edit</button>
                 </td>
               </tr>
               <tr>
@@ -138,7 +137,7 @@ const DemoList = () => {
                 <td>Manager</td>
                 <td>Inactive</td>
                 <td>
-                  <button className="btn-outline">Edit</button>
+                  <button className="btn-tertiary">Edit</button>
                 </td>
               </tr>
             </tbody>
@@ -167,31 +166,7 @@ const DemoList = () => {
             <progress value="70" max="100">
               70%
             </progress>
-
-            <h4 style={{ marginTop: "1rem" }}>Meter</h4>
-            <meter value="6" min="0" max="10">
-              6 out of 10
-            </meter>
           </div>
-        </section>
-
-        {/* Code Examples */}
-        <section className="mb-4">
-          <h3>Code Examples</h3>
-          <p>
-            Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy
-          </p>
-          <p>
-            Here's some <code>inline code</code> and a{" "}
-            <mark>highlighted text</mark>
-          </p>
-
-          <pre>
-            <code>{`function hello() {
-  console.log("Hello, CyberCSS!");
-  return true;
-}`}</code>
-          </pre>
         </section>
 
         {/* Text Effects */}
