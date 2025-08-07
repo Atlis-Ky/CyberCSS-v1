@@ -13,8 +13,12 @@ const DemoList = () => {
         {/* Typography */}
         <section className="mb-4">
           <h2>Typography Examples</h2>
+          <h1>This is an H1 heading</h1>
+          <h2>This is an H2 heading</h2>
           <h3>This is an H3 heading</h3>
           <h4>This is an H4 heading</h4>
+          <h5>This is an H5 heading</h5>
+          <h6>This is an H6 heading</h6>
           <p>
             This is a paragraph with some <strong>bold text</strong> and{" "}
             <em>italic text</em>. It also contains a{" "}
