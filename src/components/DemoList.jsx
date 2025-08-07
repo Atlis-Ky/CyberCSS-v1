@@ -38,7 +38,7 @@ const DemoList = () => {
           <div
             style={{
               display: "flex",
-              gap: "0.8rem",
+              gap: "1rem",
               flexWrap: "wrap",
               marginBottom: "1rem",
             }}
@@ -101,7 +101,9 @@ const DemoList = () => {
             </select>
 
             <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
-              <button type="submit" className="btn-primary">Submit</button>
+              <button type="submit" className="btn-primary">
+                Submit
+              </button>
               <button type="reset" className="btn-cancel">
                 Reset
               </button>
@@ -128,6 +130,7 @@ const DemoList = () => {
                 <td>Active</td>
                 <td>
                   <button className="btn-edit">Edit</button>
+                  <button className="btn-cancel">Delete</button>
                 </td>
               </tr>
               <tr>
@@ -136,6 +139,7 @@ const DemoList = () => {
                 <td>Active</td>
                 <td>
                   <button className="btn-edit">Edit</button>
+                  <button className="btn-cancel">Delete</button>
                 </td>
               </tr>
               <tr>
@@ -144,6 +148,7 @@ const DemoList = () => {
                 <td>Inactive</td>
                 <td>
                   <button className="btn-edit">Edit</button>
+                  <button className="btn-cancel">Delete</button>
                 </td>
               </tr>
             </tbody>
