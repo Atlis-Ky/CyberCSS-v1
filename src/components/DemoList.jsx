@@ -43,9 +43,10 @@ const DemoList = () => {
               marginBottom: "1rem",
             }}
           >
-            <button>Primary</button>
+            <button className="btn-primary">Primary</button>
             <button className="btn-secondary">Secondary</button>
-            <button className="btn-tertiary">Tertiary</button>
+            <button className="btn-edit">Edit</button>
+            <button className="btn-cancel">Cancel</button>
           </div>
         </section>
 
@@ -63,8 +64,8 @@ const DemoList = () => {
               </p>
             </div>
             <div className="card-footer">
-              <button>Action</button>
-              <button className="btn-secondary">Cancel</button>
+              <button className="btn-primary">Action</button>
+              <button className="btn-cancel">Cancel</button>
             </div>
           </div>
 
@@ -100,8 +101,8 @@ const DemoList = () => {
             </select>
 
             <div style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}>
-              <button type="submit">Submit</button>
-              <button type="reset" className="btn-secondary">
+              <button type="submit" className="btn-primary">Submit</button>
+              <button type="reset" className="btn-cancel">
                 Reset
               </button>
             </div>
@@ -126,7 +127,7 @@ const DemoList = () => {
                 <td>Developer</td>
                 <td>Active</td>
                 <td>
-                  <button className="btn-tertiary">Edit</button>
+                  <button className="btn-edit">Edit</button>
                 </td>
               </tr>
               <tr>
@@ -134,7 +135,7 @@ const DemoList = () => {
                 <td>Designer</td>
                 <td>Active</td>
                 <td>
-                  <button className="btn-tertiary">Edit</button>
+                  <button className="btn-edit">Edit</button>
                 </td>
               </tr>
               <tr>
@@ -142,7 +143,7 @@ const DemoList = () => {
                 <td>Manager</td>
                 <td>Inactive</td>
                 <td>
-                  <button className="btn-tertiary">Edit</button>
+                  <button className="btn-edit">Edit</button>
                 </td>
               </tr>
             </tbody>

@@ -430,9 +430,9 @@ input[type="reset"] {
   align-items: center;
   justify-content: center;
   padding: 0.8rem 1.5rem;
-  background-color: var(--color-accent);
+  background-color: var(--background-secondary);
   color: var(--color-primary);
-  border: none;
+  border: 2px solid var(--border-primary);
   border-radius: var(--border-radius-small);
   font-family: "Special Gothic Expanded One", Arial, sans-serif;
   font-size: 0.8rem;
@@ -459,17 +459,32 @@ button.active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-  background-color: var(--color-accent);
-  color: var(--background-primary);
+  background-color: var(--background-muted);
   transform: translateY(0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Variants */
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border: 2px solid var(--color-accent);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: var(--color-accent);
+  color: var(--background-primary);
+  transform: translateY(0);
+}
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--border-secondary);
+  color: var(--main-text-light);
+  border: 2px solid var(--alt-four);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -479,27 +494,46 @@ input[type="reset"]:active {
 
 .btn-secondary:active,
 .btn-secondary.active {
-  background-color: var(--color-accent);
+  background-color: var(--alt-four);
   color: var(--background-primary);
-  border-color: var(--color-accent);
+  border-color: var(--alt-four);
   transform: translateY(0);
 }
 
-.btn-tertiary {
+.btn-edit {
   background-color: transparent;
-  color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  color: var(--main-accent);
+  border: 2px solid var(--main-accent);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.btn-tertiary:hover {
+.btn-edit:hover {
   transform: translateY(-2px);
 }
 
-.btn-tertiary:active,
-.btn-tertiary.active {
+.btn-edit:active,
+.btn-edit.active {
+  background-color: var(--main-accent);
+  color: var(--background-primary);
+  transform: translateY(0);
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--border-secondary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cancel:hover {
+  transform: translateY(-2px);
+}
+
+.btn-cancel:active,
+.btn-cancel.active {
   background-color: var(--color-accent);
   color: var(--background-primary);
+  border-color: var(--color-accent);
   transform: translateY(0);
 }
 
