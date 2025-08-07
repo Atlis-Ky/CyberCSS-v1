@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: var(--main-dark);
+}
+
+.navbar-title {
+  font-size: 1.6rem;
+}
+
+.highlight-word {
+  color: var(--main-accent);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.2rem;
+  }
+}

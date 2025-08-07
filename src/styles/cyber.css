@@ -611,6 +611,19 @@ meter::-moz-meter-bar {
   padding: 0 1rem;
 }
 
+/* Navbar specific utilities */
+.navbar-brand {
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+.bottom-border-accent {
+  border-bottom: 3px solid var(--main-accent);
+}
+
 .text-center {
   text-align: center;
 }

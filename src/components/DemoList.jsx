@@ -1,8 +1,9 @@
 import "../styles/cyber.css";
+import "../styles/DemoList.css";
 
 const DemoList = () => {
   return (
-    <div className="container">
+    <div className="container demo-container">
       {/* Typography Test */}
       <header className="text-center mb-4">
         <h1 className="text-gradient">CyberCSS Framework</h1>
