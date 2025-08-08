@@ -71,7 +71,11 @@ const DemoList = () => {
             <div className="card-body">
               <p>
                 This is a basic card component with header, body, and footer
-                sections. I've loosely split it up into 3 sections to give it a header, body and footer, got some buttons down there for now but feel free to swap that out with whatever you want in your cards. you can find a few card classes in the cyber.css file to play around with and change the layout of these.
+                sections. I've loosely split it up into 3 sections to give it a
+                header, body and footer, got some buttons down there for now but
+                feel free to swap that out with whatever you want in your cards.
+                you can find a few card classes in the cyber.css file to play
+                around with and change the layout of these.
               </p>
             </div>
             <div className="card-footer">
@@ -84,7 +88,10 @@ const DemoList = () => {
             <div className="card-body">
               <h4 className="cyber-glow">Glowing Title Card</h4>
               <p>
-                maybe you want just a super slim card with a glow effect on the title? or maybe you don't who knows. Search for the cyber-glow class in the cyber.css file if you want to have a play around with the glow effects and colours.
+                maybe you want just a super slim card with a glow effect on the
+                title? or maybe you don't who knows. Search for the cyber-glow
+                class in the cyber.css file if you want to have a play around
+                with the glow effects and colours.
               </p>
             </div>
           </div>
@@ -93,6 +100,8 @@ const DemoList = () => {
         {/* Forms */}
         <section className="mb-4">
           <h2 className="h2-subheading">Form Examples</h2>
+
+          <h4 className="h4-subheading">Submission Form</h4>
           <form>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" placeholder="Enter your name" />
@@ -120,6 +129,33 @@ const DemoList = () => {
               </button>
             </div>
           </form>
+
+          <h4 className="h4-subheading">Fieldset</h4>
+          <fieldset style={{ marginTop: "2rem" }}>
+            <legend>Select Engineering Role:</legend>
+            <div className="radio-group">
+              <label className="radio-item">
+                <input type="radio" name="role" value="frontend" />
+                <span>Frontend</span>
+              </label>
+              <label className="radio-item">
+                <input type="radio" name="role" value="backend" />
+                <span>Backend</span>
+              </label>
+              <label className="radio-item">
+                <input type="radio" name="role" value="fullstack" />
+                <span>FullStack</span>
+              </label>
+              <label className="radio-item">
+                <input type="radio" name="role" value="security" />
+                <span>Security</span>
+              </label>
+              <label className="radio-item">
+                <input type="radio" name="role" value="hardware" />
+                <span>Hardware</span>
+              </label>
+            </div>
+          </fieldset>
         </section>
 
         {/* Tables */}
@@ -173,7 +209,10 @@ const DemoList = () => {
           <details>
             <summary>Click to expand details</summary>
             <p>
-              This is a collapsible details element. Stick whatever you want in here, maybe some forms, lists, or other components. uses a ul/li structure so you can target those classes to have a fiddle around with stylings on the inner components if you feel like it.
+              This is a collapsible details element. Stick whatever you want in
+              here, maybe some forms, lists, or other components. uses a ul/li
+              structure so you can target those classes to have a fiddle around
+              with stylings on the inner components if you feel like it.
             </p>
             <ul>
               <li>Feature 1</li>
@@ -189,17 +228,6 @@ const DemoList = () => {
             </progress>
           </div>
         </section>
-
-        {/* Text Effects */}
-        <section className="mb-4">
-          <h3 className="cyber-glow">Special Effects</h3>
-          <h4 className="text-gradient">Gradient Text Example</h4>
-          <p>
-            Normal text alongside{" "}
-            <span className="cyber-glow">glowing text</span>
-          </p>
-        </section>
-
         <hr />
 
         {/* Aside */}

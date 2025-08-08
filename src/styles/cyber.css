@@ -402,6 +402,10 @@ label {
   margin-bottom: 0.5rem;
   font-weight: 500;
   color: var(--color-primary);
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 input,
@@ -421,14 +425,14 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--border-highlight);
+  border-color: var(--main-accent);
   box-shadow: 0 0 0 3px var(--color-link-transparent);
 }
 
 input:hover,
 textarea:hover,
 select:hover {
-  border-color: var(--border-secondary);
+  border-color: var(--main-accent);
 }
 
 input::placeholder,
@@ -439,6 +443,61 @@ textarea::placeholder {
 textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+/* Fieldset and Radio Button Styles */
+fieldset {
+  border: 2px solid var(--main-accent);
+  border-radius: var(--border-radius-small);
+  padding: var(--padding-large);
+  margin: 1rem 0;
+  background-color: var(--background-secondary);
+}
+
+legend {
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  padding: 0 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius-small);
+  transition: background-color 0.2s ease;
+}
+
+.radio-item:hover {
+  background-color: var(--background-muted);
+}
+
+.radio-item input[type="radio"] {
+  width: auto;
+  margin: 0;
+  accent-color: var(--color-accent);
+  transform: scale(1.2);
+}
+
+.radio-item span {
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
 }
 
 /* Button Styles */

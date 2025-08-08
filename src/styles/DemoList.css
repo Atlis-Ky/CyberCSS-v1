@@ -16,6 +16,12 @@
   width: fit-content;
 }
 
+/* Form subsection headings */
+.h4-subheading{
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 600px) {
   .demo-container {
     margin-top: 1.5rem;
