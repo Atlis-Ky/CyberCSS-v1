@@ -8,7 +8,7 @@ const DemoList = () => {
     toggle2: false,
     toggle3: false,
     // Pre-activated to demonstrate active state
-    toggle4: true, 
+    toggle4: true,
     toggle5: true,
     toggle6: true,
   });
@@ -308,6 +308,36 @@ const DemoList = () => {
           </div>
         </section>
         <hr />
+
+        {/* Media Examples */}
+        <section className="mb-4">
+          <h2 className="h2-subheading">Media Examples</h2>
+
+          <h4 className="h4-subheading">Image</h4>
+          <img
+            src="/NightCity-1.png"
+            alt="Night City cyberpunk scene showing neon lights and futuristic architecture"
+          />
+
+          <h4 className="h4-subheading">Video</h4>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-ZfRAkzVt-Q?si=CXsLpJNKwWePJ7Zw"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            style={{
+              width: '100%',
+              maxWidth: '560px',
+              height: '315px',
+              borderRadius: 'var(--border-radius-large)',
+              boxShadow: '0 4px 12px var(--shadow-dark)'
+            }}
+          ></iframe>
+        </section>
 
         {/* Aside */}
         <aside>
