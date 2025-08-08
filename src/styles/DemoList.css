@@ -7,6 +7,15 @@
   margin-bottom: 4rem;
 }
 
+/* Section subheadings */
+.h2-subheading {
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--main-accent);
+  display: inline-block;
+  width: fit-content;
+}
+
 @media (max-width: 600px) {
   .demo-container {
     margin-top: 1.5rem;

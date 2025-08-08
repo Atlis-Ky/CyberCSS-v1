@@ -189,7 +189,7 @@ blockquote {
   padding: var(--padding-large);
   margin: 1.5rem 0;
   background-color: var(--background-muted);
-  border-left: 4px solid var(--border-highlight);
+  border: 3px solid var(--border-highlight);
   border-radius: var(--border-radius-small);
   font-style: italic;
 }
@@ -615,6 +615,10 @@ summary {
   font-weight: 500;
   user-select: none;
   transition: background-color 0.2s ease;
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 summary:hover {
@@ -627,6 +631,42 @@ details[open] summary {
 
 details > *:not(summary) {
   padding: 1rem;
+}
+
+/* Style lists inside details elements */
+details ul,
+details ol {
+  margin: 0.5rem 0.75rem;
+  padding-left: 0;
+}
+
+details li {
+  list-style: none;
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 2px solid var(--border-primary);
+  background-color: var(--background-tertiary);
+  border-radius: var(--border-radius-small);
+  transition: all 0.2s ease;
+  font-family: "Special Gothic Expanded One", Arial, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+details li:before {
+  content: "▶";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+details li:hover {
+  border-left-color: var(--border-highlight);
+  background-color: var(--background-accent);
 }
 
 /* Progress and Meter */
