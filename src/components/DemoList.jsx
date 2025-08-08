@@ -1,7 +1,25 @@
+import React, { useState } from "react";
 import "../styles/cyber.css";
 import "../styles/DemoList.css";
 
 const DemoList = () => {
+  const [toggleStates, setToggleStates] = useState({
+    toggle1: false,
+    toggle2: false,
+    toggle3: false,
+    // Pre-activated to demonstrate active state
+    toggle4: true, 
+    toggle5: true,
+    toggle6: true,
+  });
+
+  const handleToggle = (toggleKey) => {
+    setToggleStates((prev) => ({
+      ...prev,
+      [toggleKey]: !prev[toggleKey],
+    }));
+  };
+
   return (
     <div className="container demo-container">
       {/* Typography Test */}
@@ -46,6 +64,8 @@ const DemoList = () => {
         {/* Buttons */}
         <section className="mb-4">
           <h2 className="h2-subheading">Button Examples</h2>
+
+          <h4 className="h4-subheading">Action Buttons</h4>
           <div
             style={{
               display: "flex",
@@ -58,6 +78,65 @@ const DemoList = () => {
             <button className="btn-secondary">Secondary</button>
             <button className="btn-edit">Edit</button>
             <button className="btn-cancel">Cancel</button>
+          </div>
+
+          <h4 className="h4-subheading">Toggle Buttons</h4>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
+              gap: "1rem",
+              marginBottom: "1rem",
+            }}
+          >
+            <button
+              className={`btn-toggle btn-toggle-1 ${
+                toggleStates.toggle1 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle1")}
+            >
+              Toggle 1
+            </button>
+            <button
+              className={`btn-toggle btn-toggle-2 ${
+                toggleStates.toggle2 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle2")}
+            >
+              Toggle 2
+            </button>
+            <button
+              className={`btn-toggle btn-toggle-3 ${
+                toggleStates.toggle3 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle3")}
+            >
+              Toggle 3
+            </button>
+            <button
+              className={`btn-toggle btn-toggle-4 ${
+                toggleStates.toggle4 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle4")}
+            >
+              Toggle 4
+            </button>
+            <button
+              className={`btn-toggle btn-toggle-5 ${
+                toggleStates.toggle5 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle5")}
+            >
+              Toggle 5
+            </button>
+            <button
+              className={`btn-toggle btn-toggle-6 ${
+                toggleStates.toggle6 ? "active" : ""
+              }`}
+              onClick={() => handleToggle("toggle6")}
+            >
+              Toggle 6
+            </button>
           </div>
         </section>
 
