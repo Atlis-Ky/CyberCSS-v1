@@ -252,7 +252,7 @@ code {
   padding: 0.125rem 0.375rem;
   border-radius: var(--border-radius-small);
   font-size: 0.875em;
-  border: 1px solid var(--alt-five);
+  border: 2px solid var(--alt-five);
 }
 
 pre {
@@ -307,6 +307,64 @@ video {
   height: auto;
   border-radius: var(--border-radius-large);
   box-shadow: 0 4px 12px var(--shadow-dark);
+}
+
+/* Media Container Classes */
+.media-container {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--background-secondary);
+  border: 2px solid var(--border-primary);
+  border-radius: var(--border-radius-large);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.media-container:hover {
+  border-color: var(--main-accent);
+  box-shadow: 0 8px 25px var(--shadow-dark);
+  transform: translateY(-2px);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-primary);
+  margin-bottom: 0.75rem;
+}
+
+.image-container:hover img {
+  transform: scale(1.02);
+}
+
+.video-container {
+  position: relative;
+  background-color: var(--background-tertiary);
+  padding: 0.75rem;
+  border-radius: var(--border-radius-large);
+}
+
+.video-container iframe {
+  border: 2px solid var(--border-primary);
+  transition: border-color 0.3s ease;
+  margin-bottom: 0.75rem;
+}
+
+.video-container:hover iframe {
+  border-color: var(--alt-five);
+}
+
+.media-description {
+  margin: 0;
+  color: var(--main-text-light);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 figure {

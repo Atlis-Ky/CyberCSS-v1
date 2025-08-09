@@ -22,16 +22,10 @@ const DemoList = () => {
 
   return (
     <div className="container demo-container">
-      {/* Typography Test */}
-      {/* <header className="text-center mb-4">
-        <h1 className="text-gradient">CyberCSS Framework</h1>
-        <p>A modern, lightweight CSS framework with cyberpunk aesthetics</p>
-      </header> */}
-
       <main>
         {/* Typography */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Typography Examples</h2>
+          <h2 className="h2-subheading">Typography Examples:</h2>
           <h1>This is an H1 heading</h1>
           <h2>This is an H2 heading</h2>
           <h3>This is an H3 heading</h3>
@@ -63,7 +57,7 @@ const DemoList = () => {
 
         {/* Buttons */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Button Examples</h2>
+          <h2 className="h2-subheading">Button Examples:</h2>
 
           <h4 className="h4-subheading">Action Buttons</h4>
           <div
@@ -142,7 +136,7 @@ const DemoList = () => {
 
         {/* Cards */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Card Examples</h2>
+          <h2 className="h2-subheading">Card Examples:</h2>
           <div className="card">
             <div className="card-header">
               <h3 className="card-title">Basic Card</h3>
@@ -178,7 +172,7 @@ const DemoList = () => {
 
         {/* Forms */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Form Examples</h2>
+          <h2 className="h2-subheading">Form Examples:</h2>
 
           <h4 className="h4-subheading">Submission Form</h4>
           <form>
@@ -239,7 +233,7 @@ const DemoList = () => {
 
         {/* Tables */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Table Example</h2>
+          <h2 className="h2-subheading">Table Example:</h2>
           <table>
             <thead>
               <tr>
@@ -283,7 +277,7 @@ const DemoList = () => {
 
         {/* Interactive Elements */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Interactive Elements</h2>
+          <h2 className="h2-subheading">Interactive Elements:</h2>
 
           <details>
             <summary>Click to expand details</summary>
@@ -311,40 +305,44 @@ const DemoList = () => {
 
         {/* Media Examples */}
         <section className="mb-4">
-          <h2 className="h2-subheading">Media Examples</h2>
+          <h2 className="h2-subheading">Media Examples:</h2>
 
-          <h4 className="h4-subheading">Image</h4>
-          <img
-            src="/NightCity-1.png"
-            alt="Night City cyberpunk scene showing neon lights and futuristic architecture"
-          />
+          <h4 className="h4-subheading">Image Container</h4>
+          <div className="media-container image-container">
+            <img
+              src="/NightCity-1.png"
+              alt="Night City scene showing neon lights and futuristic architecture"
+            />
+            <h5 className="media-description">
+              Neon lit streets of Night City inside this lil container
+            </h5>
+          </div>
 
-          <h4 className="h4-subheading">Video</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-ZfRAkzVt-Q?si=CXsLpJNKwWePJ7Zw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            style={{
-              width: '100%',
-              maxWidth: '560px',
-              height: '315px',
-              borderRadius: 'var(--border-radius-large)',
-              boxShadow: '0 4px 12px var(--shadow-dark)'
-            }}
-          ></iframe>
+          <h4 className="h4-subheading">Video Container</h4>
+          <div className="media-container video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-ZfRAkzVt-Q?si=CXsLpJNKwWePJ7Zw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              style={{
+                width: "100%",
+                maxWidth: "100%",
+                height: "315px",
+                borderRadius: "var(--border-radius-large)",
+                boxShadow: "0 4px 12px var(--shadow-dark)",
+              }}
+            ></iframe>
+            <h5 className="media-description">
+              Embedded video content with responsive styling and accented border
+              effects
+            </h5>
+          </div>
         </section>
-
-        {/* Aside */}
-        <aside>
-          <p>
-            This is an aside element to test the border and background styling.
-          </p>
-        </aside>
       </main>
 
       <footer className="text-center mt-4">
