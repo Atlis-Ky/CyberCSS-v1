@@ -12,7 +12,7 @@ const ContextCard = () => {
           </span>
         </h1>
         <p>
-          CYBER.cSS is a lightweight, modern looking CSS file that you can use to style your
+          CYBER.CSS is a lightweight, modern looking CSS file that you can use to style your
           own projects. It's an ideal way to get your HTML based elements looking
           fresh super speedily by having access to a wide range of preset CSS
           classes. Feel free to play around and customise anything in there! You
