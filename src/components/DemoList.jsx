@@ -300,6 +300,26 @@ const DemoList = () => {
               70%
             </progress>
           </div>
+
+          <div style={{ marginTop: "2rem" }}>
+            <h4>Option Groups (optgroup)</h4>
+            <label htmlFor="role-select">Select your role:</label>
+            <select id="role-select" style={{ marginTop: "0.5rem" }}>
+              <optgroup label="Engineering">
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">FullStack</option>
+                <option value="security">Security</option>
+                <option value="hardware">Hardware</option>
+              </optgroup>
+              <optgroup label="Admin">
+                <option value="admin">Admin</option>
+                <option value="customer-support">Customer Support</option>
+                <option value="management">Management</option>
+                <option value="bookkeeper">Bookkeeper</option>
+              </optgroup>
+            </select>
+          </div>
         </section>
         <hr />
 
@@ -351,7 +371,9 @@ const DemoList = () => {
           <h4 className="h4-subheading">Description List (dl)</h4>
           <dl className="styled">
             <dt>CyberCSS Framework</dt>
-            <dd>A lightweight CSS tool with plenty of generic and custom classes.</dd>
+            <dd>
+              A lightweight CSS tool with plenty of generic and custom classes.
+            </dd>
 
             <dt>Special Gothic Typography</dt>
             <dd>Custom font for any h1-h6 elements.</dd>
@@ -369,13 +391,15 @@ const DemoList = () => {
 
           <h4 className="h4-subheading">Ordered List (ol)</h4>
           <ol className="styled">
+            <li>Download or paste the cyber.css file into your project.</li>
             <li>
-              Download or paste the cyber.css file into your project.
+              Add the <code>.container</code> class to your wrapper if you want
+              to centralise your content.
             </li>
             <li>
-              Add the <code>.container</code> class to your wrapper if you want to centralise your content.
+              Apply classes to your elements as needed to quickly and cleanly
+              style up your pages.
             </li>
-            <li>Apply classes to your elements as needed to quickly and cleanly style up your pages.</li>
           </ol>
         </section>
       </main>
