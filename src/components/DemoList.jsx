@@ -403,10 +403,6 @@ const DemoList = () => {
           </ol>
         </section>
       </main>
-
-      <footer className="text-center mt-4">
-        <small>&copy; 2025 CyberCSS Framework - Test Page</small>
-      </footer>
     </div>
   );
 };
