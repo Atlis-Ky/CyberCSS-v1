@@ -224,6 +224,106 @@ li {
   line-height: 1.6;
 }
 
+/* Enhanced List Classes */
+dl.styled {
+  padding: 1rem;
+  border-left: 3px solid var(--main-accent);
+  background-color: var(--background-secondary);
+}
+
+dl.styled dt {
+  color: var(--main-accent);
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+dl.styled dt:first-child {
+  margin-top: 0;
+}
+
+ul.styled {
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid var(--alt-three);
+  padding: 1rem;
+  background-color: var(--background-secondary);
+}
+
+ul.styled li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.styled li:before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: var(--alt-three);
+  font-size: 0.8rem;
+}
+
+ol.styled {
+  counter-reset: cyber-counter;
+  list-style: none;
+  padding-left: 0;
+  border-left: 3px solid var(--alt-five);
+  padding: 1rem;
+  background-color: var(--background-secondary);
+}
+
+ol.styled li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  counter-increment: cyber-counter;
+}
+
+ol.styled li:before {
+  content: counter(cyber-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--alt-five);
+  color: var(--main-text-dark);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* List Component Classes */
+.list-card {
+  background-color: var(--background-secondary);
+  padding: var(--padding-large);
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--border-primary);
+  margin-bottom: 1rem;
+}
+
+.list-card-accent {
+  background-color: var(--background-secondary);
+  padding: var(--padding-large);
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--border-primary);
+  border-left: 4px solid var(--main-accent);
+  margin-bottom: 1rem;
+}
+
+.list-card-alt {
+  background-color: var(--background-secondary);
+  padding: var(--padding-large);
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--border-primary);
+  border-left: 4px solid var(--alt-three);
+  margin-bottom: 1rem;
+}
+
 /* Inline Text Elements */
 a {
   color: var(--color-link);

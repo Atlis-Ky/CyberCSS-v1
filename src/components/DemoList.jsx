@@ -162,7 +162,7 @@ const DemoList = () => {
               <h4 className="cyber-glow">Glowing Title Card</h4>
               <p>
                 maybe you want just a super slim card with a glow effect on the
-                title? or maybe you don't who knows. Search for the cyber-glow
+                title? Or maybe you don't who knows. Search for the cyber-glow
                 class in the cyber.css file if you want to have a play around
                 with the glow effects and colours.
               </p>
@@ -342,6 +342,41 @@ const DemoList = () => {
               effects
             </h5>
           </div>
+        </section>
+
+        {/* Lists */}
+        <section className="mb-4">
+          <h2 className="h2-subheading">Lists Examples:</h2>
+
+          <h4 className="h4-subheading">Description List (dl)</h4>
+          <dl className="styled">
+            <dt>CyberCSS Framework</dt>
+            <dd>A lightweight CSS tool with plenty of generic and custom classes.</dd>
+
+            <dt>Special Gothic Typography</dt>
+            <dd>Custom font for any h1-h6 elements.</dd>
+
+            <dt>Interactive Components</dt>
+            <dd>Buttons, cards, forms with hover effects, and loads more.</dd>
+          </dl>
+
+          <h4 className="h4-subheading">Unordered List (ul)</h4>
+          <ul className="styled">
+            <li> Responsive design across all device sizes.</li>
+            <li> Smooth hover effects and transitions.</li>
+            <li> Matched color palette with complementary border accents.</li>
+          </ul>
+
+          <h4 className="h4-subheading">Ordered List (ol)</h4>
+          <ol className="styled">
+            <li>
+              Download or paste the cyber.css file into your project.
+            </li>
+            <li>
+              Add the <code>.container</code> class to your wrapper if you want to centralise your content.
+            </li>
+            <li>Apply classes to your elements as needed to quickly and cleanly style up your pages.</li>
+          </ol>
         </section>
       </main>
 
