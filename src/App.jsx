@@ -1,5 +1,5 @@
 import DemoList from "./components/DemoList";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 import ContextCard from "./components/ContextCard";
 import "./styles/cyber.css";
 import Footer from "./components/Footer";
